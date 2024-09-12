@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>korsa.io</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="scroll-smooth overflow-x-hidden">
+    <div class="relative" id="main">
+        <nav class="opacity-0 md:opacity-100 w-full font-Mona-sans px-4 md:px-8 h-20 bg-white flex items-center justify-between">
+            <div class="n-left flex items-center gap-10 md:gap-16">
+                <img class="w-10 anim" src="images/logo.png" alt="">
+                <div class="menu flex gap-5 md:gap-10">
+                    <a class="uppercase text-md anim" href="#">home</a>
+                    <a class="uppercase text-md anim opacity-65" href="#">why us</a>
+                    <a class="uppercase text-md anim opacity-65" href="#">services</a>
+                    <a class="uppercase text-md anim opacity-65" href="#">FAQs</a>
+                </div>
+            </div>
+            <div class="n-right">
+                <button class="border-gray-700 border-[1px] px-4 md:px-5 py-2 md:py-3 rounded-full relative group transition-transform duration-300 hover:border-none hover:bg-blue-500 btn-anim">
+                    <div class="btn-text h-[3.5vh]  overflow-hidden lg:-translate-y-[.4vw]">
+                        <h3 class="text-lg md:text-[16px] capitalize transform transition-transform duration-300 group-hover:-translate-y-full group-hover:text-white">start new project</h3>
+                        <h3 class="text-lg md:text-[16px] capitalize transform transition-transform duration-300 group-hover:-translate-y-[100%] group-hover:text-white">let's talk</h3>
+                    </div>
+                </button>
+            </div>
+        </nav>
+        <!-- mobile nav -->
+        <nav class="md:hidden z-50  fixed top-0 left-0 w-full h-16 bg-white flex items-center justify-between px-4">
+            <div class="nav-left">
+                <img class="w-10" src="images/logo.png" alt="">
+            </div>
+            <div class="nav-right">
+                <i class="ri-menu-fill text-2xl cursor-pointer menu-icon"></i>
+            </div>
+        </nav>
+        <div class="md:hidden z-50 absolute  phone-menu nav-items-box text-white mt-4 w-[80vw] left-[10vw] h-[70vh] rounded-3xl p-2 bg-black transform transition-transform duration-300 -translate-y-[120%]">
+            <div class="cross-icon w-full text-right p-3"><i class="ri-close-large-fill"></i></div>
+            <div class="menu mb-20 text-center mt-20 w-full flex gap-14 flex-col text-white">
+                <a class="uppercase text-3xl font-medium" href="#">home</a>
+                <a class="uppercase text-3xl font-medium opacity-85" href="#">why us</a>
+                <a class="uppercase text-3xl font-medium opacity-85" href="#">services</a>
+                <a class="uppercase text-3xl font-medium opacity-85" href="#">FAQs</a>
+            </div>
+            <div class="btn-box  w-full flex justify-center">
+                <button class="bg-white mb-10 px-4 py-2 rounded-full relative group transition-transform duration-300 hover:border-none hover:bg-blue-500">
+                    <div class="btn-text overflow-hidden">
+                        <h3 class="text-xl text-black capitalize transform transition-transform duration-300 group-hover:text-white">start new project</h3>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Hero section -->
+        <div class="hero-container  w-full h-[90vh] md:h-[50vh] lg:h-[90vh]  bg-white flex justify-center">
+            <div class="hero-text-box pt-32 px-20 md:pt-36 lg:pt-20 lg:px-32 md:px-16 ">
+                <h1 class="mb-6 flex  flex-col text-center items-center leading-tight  font-[mona-wide] text-[12vw] relative  md:hidden">Delivering creativity with our<span class="leading-none flex items-center gap-2 ">design <img class="w-24 -translate-y-3  " src="images/heroimg.png" alt=""></span> solutions</h1>
+                <div class="heading-container hidden md:block h-44  relative overflow-hidden  ">
+                    <h1 class="hidden lg:translate-y-52 lg:rotate-3  md:block md:text-[6vw] md:text-center  lg:text-7xl tracking-normal font-[mona-wide] ">
+                        Delivering creativity with<br>
+                        <span class="inline-flex items-center">
+                          our design <img class="lg:w-32 md:w-24 -translate-y-4 mx-4 " src="images/heroimg.png" alt=""> solutions
+                        </span>
+                      </h1>
+                </div>
+                  
+                  
+               <div class="paragraph-text overflow-hidden ">
+                <p class="font-mona-sans mt-16 text-3xl md:mt-16 text-center lg:rotate-3 lg:translate-y-20 md:w-[50%] md:mx-auto md:text-[1.6vw] md:leading-normal md:font-normal opacity-65">Passionate agency delivering creative design solutions for impactful results.</p>
+               </div>
+            </div>
+        </div>
+        <!-- Page 2 -->
+         <div class="page2 w-full h-[35vh] md:h-[85vh] mb-20 lg:h-screen flex items-center gap-7 overflow-x-auto no-scrollbar">
+            <img class="w-[75%] h-full md:h-[80%] md:w-[80%] lg:h-[90%] lg:w-[100vw]" src="images/head-img1.png" alt="">
+            <img class="w-[75%] h-full md:h-[80%] md:w-[80%] lg:h-[90%] lg:w-[100vw]" src="images/head-img1.png" alt="">
+            <img class="w-[75%] h-full md:h-[80%] md:w-[80%] lg:h-[90%] lg:w-[100vw]" src="images/head-img1.png" alt="">
+         </div>
+         <!-- Page 3 -->
+         <div class="w-full h-[90vh] xl:h-screen px-6 py-4 pt-32 md:pt-14 lg:pt-20  bg-black relative text-white">
+            <h5 class="text-lg capitalize">about us</h5>
+            <h1 class="font-[mona-wide] text-[7vw] md:text-[4vw] md:w-[50%] md:leading-none lg:text-[5vw] lg:w-[70%] lg:leading-none xl:text-[5.5vw] xl:leading-none xl:w-[80%] leading-[7.9vw]  my-10">Korsa is a Creative Design Agency With Extensive Experience And Talented Team.</h1>
+            <p class="w-[65%] text-xl xl:w-[40%]">We are the ones with the creative idea of ​​creating stunning visuals that grab attention and leave a lasting impression!</p>
+            <div class="marque-container z-10 overflow-x-hidden bg-blue-600 -left-10 absolute w-[110vw] -rotate-3 bottom-1 lg:-bottom-10 flex ">
+                <div class="row flex p-3 py-6 xl:py-8 lg:py-8 whitespace-nowrap">
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    <h2 class="font-[mona-wide] text-3xl whitespace-nowrap uppercase">web design</h2>
+                    <div class="svg-box">
+                        <svg  width="100" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_785_6641)" filter="url(#filter0_d_785_6641)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81845 18.1856C6.77096 20.1537 12.7747 18.7201 16.1664 21.7734C19.0422 24.3622 19.1979 30.7104 20.2143 35.2952C25.5102 20.4735 17.469 21.0471 37.4993 17.9161C33.5388 16.0218 26.6772 17.0159 23.752 14.4171C20.7809 11.7775 21.0894 4.62861 19.4415 0.614136C17.1254 17.613 18.6279 14.8482 2.81787 18.1861L2.81845 18.1856Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_785_6641" x="0.224283" y="0.61438" width="39.8842" height="39.8842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2.6014"></feOffset>
+                            <feGaussianBlur stdDeviation="1.3007"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_785_6641"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_785_6641" result="shape"></feBlend>
+                            </filter>
+                            <clipPath id="clip0_785_6641">
+                            <rect width="34.6814" height="34.6814" fill="white" transform="translate(2.82568 0.61438)"></rect>
+                            </clipPath>
+                            </defs></svg>
+                    </div>
+                    
+                </div>
+            </div>
+         </div>
+         <!-- Page4 -->
+          <div class="discoverPage  w-full min-h-screen pt-20 bg-white ">
+            <h3 class="font-mona-sans text-blue-500 text-xl capitalize mb-6 text-center">why us</h3>
+            <h2 class="font-[mona-wide] mx-auto text-5xl px-7 text-center">Discover the difference</h2>
+            <div class="cards-container w-fit pb-12 mt-16 px-6 font-mona-sans lg:flex-row gap-14  md:overflow-x-auto  no-scrollbar md:mx-auto">
+                <div class="card md:w-[22%] pt-24 mb-16 rounded-3xl bg-zinc-900 text-white px-3 py-8 flex flex-col items-center justify-between gap-20 md:flex-shrink-0 md:mb-0 xl:pt-10 xl:gap-10">
+                    <img src="images/discover1.svg" alt="">
+                    <div class="card-text">
+                        <h3 class="font-[mona-wide] text-center text-3xl mb-3">Work Everyday</h3>
+                        <p class="text-center px-2">Our committed agency, equipped with proficient design talents and years of experience, is poised to tirelessly work towards fulfilling your goals.</p>
+                    </div>
+                </div>
+                <div class="card pt-24 mb-16 rounded-3xl bg-gray-100  text-black px-3 py-8 flex flex-col items-center justify-between gap-20 md:flex-shrink-0 md:mb-0 xl:pt-10 xl:gap-10">
+                    <img src="images/discover2.svg" alt="">
+                    <div class="card-text">
+                        <h3 class="font-[mona-wide] text-center text-3xl mb-3">Work Everyday</h3>
+                        <p class="text-center px-2">Our committed agency, equipped with proficient design talents and years of experience, is poised to tirelessly work towards fulfilling your goals.</p>
+                    </div>
+                </div>
+                <div class="card pt-24 mb-16 rounded-3xl bg-blue-600 text-white px-3 py-8 flex flex-col items-center justify-between gap-20 md:flex-shrink-0 md:mb-0 xl:pt-10 xl:gap-10">
+                    <img src="images/discover3.svg" alt="">
+                    <div class="card-text">
+                        <h3 class="font-[mona-wide] text-center text-3xl mb-3">Work Everyday</h3>
+                        <p class="text-center px-2">Our committed agency, equipped with proficient design talents and years of experience, is poised to tirelessly work towards fulfilling your goals.</p>
+                    </div>
+                </div>
+                <div class="card pt-24 mb-16 rounded-3xl bg-gray-100  text-black  px-3 py-8 flex flex-col items-center justify-between gap-20 md:flex-shrink-0 md:mb-0 xl:pt-10 xl:gap-10">
+                    <img src="images/discover4.svg" alt="">
+                    <div class="card-text">
+                        <h3 class="font-[mona-wide] text-center text-3xl mb-3">Work Everyday</h3>
+                        <p class="text-center px-2">Our committed agency, equipped with proficient design talents and years of experience, is poised to tirelessly work towards fulfilling your goals.</p>
+                    </div>
+                </div>
+                <div class="card pt-24 mb-16 rounded-3xl bg-zinc-900 text-white px-3 py-8 flex flex-col items-center justify-between gap-20 md:flex-shrink-0 md:mb-0 xl:pt-10 xl:gap-10">
+                    <img src="images/discover5.svg" alt="">
+                    <div class="card-text">
+                        <h3 class="font-[mona-wide] text-center text-3xl mb-3">Work Everyday</h3>
+                        <p class="text-center px-2">Our committed agency, equipped with proficient design talents and years of experience, is poised to tirelessly work towards fulfilling your goals.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- Page5 -->
+           <div class="page5 w-full min-h-screen pt-9 px-3 lg:px-6">
+            <h3 class="font-mona-sans text-blue-500 text-xl capitalize mb-4 px-6">why us</h3>
+            <h2 class="font-[mona-wide] mx-auto text-5xl leading-[12vw] px-6 sm:leading-[8vw] sm:text-4xl sm:pr-40 md:mr-44 md:leading-[7vw] md:text-6xl lg:mr-96 lg:leading-[5vw] ">We Collect your idea and Visualize It</h2>
+            <div class="services-container pb-8 w-full mt-20 lg:flex lg:flex-col lg:items-center">
+
+                <div class="service group relative my-10 lg:my-0 cursor-pointer md:border-t-2 md:border-b-2 md:hover:border-b-0 md:hover:border-t-0 lg:w-[95%]  ">
+                    <img class="w-[95%] mx-auto lg:mx-0 mb-4 md:absolute md:w-[24%] md:left-[55%] lg:w-[28%] md:top-1/2 md:-translate-y-1/2 md:-translate-x-1/2" src="images/service-1_1.png" alt="">
+                    <div class="service-details px-3 md:px-3 md:py-7 py-4 flex justify-between items-center lg:py-10 md:hover:px-8 duration-500 md:hover:bg-gray-100 rounded-2xl">
+                        <h2 class="capitalize font-[mona-wide] opacity-50 text-3xl duratio sm:text-4xl md:text-3xl lg:text-[3.5vw] -500	 transition-opacity group-hover:opacity-100">logo & branding</h2>
+                        <div class="flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14 md:w-12 md:h-12 rounded-full duration-500 group-hover:bg-blue-600">
+                            <i class="ri-arrow-right-line flex text-gray-700 text-2xl sm:text-3xl md:text-2xl  transition-all duration-500	 transform group-hover:text-white  group-hover:-rotate-45"></i>
+                          </div>
+                    </div>
+                </div>
+                <div class="service group relative my-10 lg:my-0 cursor-pointer md:border-t-2 md:hover:border-t-0 lg:w-[95%]">
+                    <img class="w-[95%] mx-auto lg:mx-0 mb-4 md:absolute md:w-[24%] md:left-[55%] lg:w-[28%] md:top-1/2 md:-translate-y-1/2 md:-translate-x-1/2" src="images/service-1.png" alt="">
+                    <div class="service-details px-3 md:px-3 md:py-7 py-4 flex justify-between items-center lg:py-10 md:hover:px-8 duration-500 md:hover:bg-gray-100 rounded-2xl">
+                        <h2 class="capitalize w-[60%] font-[mona-wide] opacity-50 text-3xl sm:text-4xl md:text-3xl lg:text-[3.5vw] duration-500	 transition-opacity group-hover:opacity-100">mobile apps design</h2>
+                        <div class="flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14 md:w-12 md:h-12 rounded-full duration-500 group-hover:bg-blue-600">
+                            <i class="ri-arrow-right-line flex text-gray-700 text-2xl sm:text-3xl md:text-2xl  transition-all duration-500	 transform group-hover:text-white  group-hover:-rotate-45"></i>
+                          </div>
+                    </div>
+                </div>
+                <div class="service group relative my-10 lg:my-0 cursor-pointer md:border-t-2 md:hover:border-t-0 lg:w-[95%]">
+                    <img class="w-[95%] mx-auto lg:mx-0 mb-4 md:absolute md:w-[24%] md:left-[55%] lg:w-[28%] md:top-1/2 md:-translate-y-1/2 md:-translate-x-1/2" src="images/service-3.png" alt="">
+                    <div class="service-details px-3 md:px-3 md:py-7 py-4 flex justify-between items-center lg:py-10 md:hover:px-8 duration-500 md:hover:bg-gray-100 rounded-2xl">
+                        <h2 class="capitalize font-[mona-wide] opacity-50 text-3xl duratio sm:text-4xl md:text-3xl lg:text-[3.5vw] -500	 transition-opacity group-hover:opacity-100">web design</h2>
+                        <div class="flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14 md:w-12 md:h-12 rounded-full duration-500 group-hover:bg-blue-600">
+                            <i class="ri-arrow-right-line flex text-gray-700 text-2xl sm:text-3xl md:text-2xl  transition-all duration-500	 transform group-hover:text-white  group-hover:-rotate-45"></i>
+                          </div>
+                    </div>
+                </div>
+                <div class="service group relative my-10 lg:my-0 cursor-pointer md:border-t-2 md:hover:border-t-0 lg:w-[95%]">
+                    <img class="w-[95%] mx-auto lg:mx-0 mb-4 md:absolute md:w-[24%] md:left-[55%] lg:w-[28%] md:top-1/2 md:-translate-y-1/2 md:-translate-x-1/2" src="images/service-4.png" alt="">
+                    <div class="service-details px-3 md:px-3 md:py-7 py-4 flex justify-between items-center lg:py-10 md:hover:px-8 duration-500 md:hover:bg-gray-100 rounded-2xl">
+                        <h2 class="capitalize font-[mona-wide] opacity-50 text-3xl duratio sm:text-4xl md:text-3xl lg:text-[3.5vw] -500	 transition-opacity group-hover:opacity-100">illustration</h2>
+                        <div class="flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14 md:w-12 md:h-12 rounded-full duration-500 group-hover:bg-blue-600">
+                            <i class="ri-arrow-right-line flex text-gray-700 text-2xl sm:text-3xl md:text-2xl  transition-all duration-500	 transform group-hover:text-white  group-hover:-rotate-45"></i>
+                          </div>
+                    </div>
+                </div>
+                <div class="service group relative my-10 lg:my-0 cursor-pointer md:border-t-2 md:hover:border-t-0 lg:w-[95%]">
+                    <img class="w-[95%] mx-auto lg:mx-0 mb-4 md:absolute md:w-[24%] md:left-[55%] lg:w-[28%] md:top-1/2 md:-translate-y-1/2 md:-translate-x-1/2" src="images/service-6.png" alt="">
+                    <div class="service-details px-3 md:px-3 md:py-7 py-4 flex justify-between items-center lg:py-10 md:hover:px-8 duration-500 md:hover:bg-gray-100 rounded-2xl">
+                        <h2 class="capitalize font-[mona-wide] opacity-50 text-3xl duratio sm:text-4xl md:text-3xl lg:text-[3.5vw] -500	 transition-opacity group-hover:opacity-100">development</h2>
+                        <div class="flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14 md:w-12 md:h-12 rounded-full duration-500 group-hover:bg-blue-600">
+                            <i class="ri-arrow-right-line flex text-gray-700 text-2xl sm:text-3xl md:text-2xl  transition-all duration-500	 transform group-hover:text-white  group-hover:-rotate-45"></i>
+                          </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+           </div>
+           <!-- Page6 -->
+            <div class="page6 w-full h-screen md:h-fit font-mona-sans px-4 py-6 mb-10 ">
+                <div class="page6-container p-4 w-full h-[90%] md:h-fit md:pb-20 bg-black text-white rounded-2xl md:flex lg:gap-5">
+                    <div class="p6-left pt-10 md:w-[40%] md:mt-5 lg:w-[32%]">
+                        <h5 class="mb-5">How It Works</h5>
+                        <h2 class="font-[mona-wide] text-4xl md:leading-[7vw] lg:text-5xl lg:leading-[5vw]">Simplify The Process To Shorten The Timeline</h2>
+                    </div>
+                    <div class="p6-right w-full mt-10 font-mona-sans">
+                        <div class="process-box mb-2 md:mb-4 text-gray-400 px-1 py-4 border-b-[1px] border-gray-400 duration-500">
+                            <div class="process-box-top flex items-center justify-between">
+                                <div class="process-box-left flex items-center gap-4">
+                                    <h4 class="text-sm ">01</h4>
+                                    <h2 class="capitalize font-[mona-wide] text-lg sm:text-2xl lg:text-3xl">fill the brief template</h2>
+                                </div>
+                                <div class="process-box-right">
+                                    <div class="w-7 h-7 lg:w-10 lg:h-10   flex items-center justify-center rounded-full"><i class="ri-arrow-down-s-line text-gray-300 text-lg inline-block updownIcon transform rotate-0 duration-500 sm:text-xl lg:text-3xl"></i></div>
+                                </div>
+                            </div>
+                            <div class="process-box-btm hidden mt-3 ">
+                                <p class="text-xs sm:text-sm lg:text-lg ">We ask you to provide a brief description of the project you want. Include information about the type of project, the ultimate goal it is intended to achieve, and the context in which the project will operate.</p>
+                            </div>
+                        </div>
+                        <div class="process-box mb-2 md:mb-4 text-gray-400 px-1 py-4 border-b-[1px] border-gray-400 duration-500">
+                            <div class="process-box-top flex items-center justify-between">
+                                <div class="process-box-left flex items-center gap-4">
+                                    <h4 class="text-sm ">01</h4>
+                                    <h2 class="capitalize font-[mona-wide] text-lg sm:text-2xl lg:text-3xl">fill the brief template</h2>
+                                </div>
+                                <div class="process-box-right">
+                                    <div class="w-7 h-7 lg:w-10 lg:h-10   flex items-center justify-center rounded-full"><i class="ri-arrow-down-s-line text-gray-300 text-lg inline-block updownIcon transform rotate-0 duration-500 sm:text-xl lg:text-3xl"></i></div>
+                                </div>
+                            </div>
+                            <div class="process-box-btm hidden mt-3 ">
+                                <p class="text-xs sm:text-sm lg:text-lg ">We ask you to provide a brief description of the project you want. Include information about the type of project, the ultimate goal it is intended to achieve, and the context in which the project will operate.</p>
+                            </div>
+                        </div>
+                        <div class="process-box mb-2 md:mb-4 text-gray-400 px-1 py-4 border-b-[1px] border-gray-400 duration-500">
+                            <div class="process-box-top flex items-center justify-between">
+                                <div class="process-box-left flex items-center gap-4">
+                                    <h4 class="text-sm ">01</h4>
+                                    <h2 class="capitalize font-[mona-wide] text-lg sm:text-2xl lg:text-3xl">fill the brief template</h2>
+                                </div>
+                                <div class="process-box-right">
+                                    <div class="w-7 h-7 lg:w-10 lg:h-10   flex items-center justify-center rounded-full"><i class="ri-arrow-down-s-line text-gray-300 text-lg inline-block updownIcon transform rotate-0 duration-500 sm:text-xl lg:text-3xl"></i></div>
+                                </div>
+                            </div>
+                            <div class="process-box-btm hidden mt-3 ">
+                                <p class="text-xs sm:text-sm lg:text-lg ">We ask you to provide a brief description of the project you want. Include information about the type of project, the ultimate goal it is intended to achieve, and the context in which the project will operate.</p>
+                            </div>
+                        </div>
+                        <div class="process-box mb-2 md:mb-4 text-gray-400 px-1 py-4 border-b-[1px] border-gray-400 duration-500">
+                            <div class="process-box-top flex items-center justify-between">
+                                <div class="process-box-left flex items-center gap-4">
+                                    <h4 class="text-sm ">01</h4>
+                                    <h2 class="capitalize font-[mona-wide] text-lg sm:text-2xl lg:text-3xl">fill the brief template</h2>
+                                </div>
+                                <div class="process-box-right">
+                                    <div class="w-7 h-7 lg:w-10 lg:h-10   flex items-center justify-center rounded-full"><i class="ri-arrow-down-s-line text-gray-300 text-lg inline-block updownIcon transform rotate-0 duration-500 sm:text-xl lg:text-3xl"></i></div>
+                                </div>
+                            </div>
+                            <div class="process-box-btm hidden mt-3 ">
+                                <p class="text-xs sm:text-sm lg:text-lg ">We ask you to provide a brief description of the project you want. Include information about the type of project, the ultimate goal it is intended to achieve, and the context in which the project will operate.</p>
+                            </div>
+                        </div>
+                        <div class="process-box mb-2 md:mb-4 text-gray-400 px-1 py-4 border-b-[1px] border-gray-400 duration-500">
+                            <div class="process-box-top flex items-center justify-between">
+                                <div class="process-box-left flex items-center gap-4">
+                                    <h4 class="text-sm ">01</h4>
+                                    <h2 class="capitalize font-[mona-wide] text-lg sm:text-2xl lg:text-3xl">fill the brief template</h2>
+                                </div>
+                                <div class="process-box-right">
+                                    <div class="w-7 h-7 lg:w-10 lg:h-10   flex items-center justify-center rounded-full"><i class="ri-arrow-down-s-line text-gray-300 text-lg inline-block updownIcon transform rotate-0 duration-500 sm:text-xl lg:text-3xl"></i></div>
+                                </div>
+                            </div>
+                            <div class="process-box-btm hidden mt-3 ">
+                                <p class="text-xs sm:text-sm lg:text-lg ">We ask you to provide a brief description of the project you want. Include information about the type of project, the ultimate goal it is intended to achieve, and the context in which the project will operate.</p>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Page7 -->
+             <div class="page7 w-full relative mb-16 ">
+                <div class="p7-text sticky top-48 md:top-52 left-0 w-full h-[80vh] md:h-[60vh] flex items-center justify-center text-center px-2 sm:px-20">
+                    <h2 class="font-[mona-wide] text-3xl md:text-5xl ">Experience Our Exceptional Design Solutions, Made Specifically For You.</h2>
+                </div>
+                <div class="p7-items w-full min-h-screen md:flex flex-col items-start ">
+                    <div class="p7-item shadow-2xl  w-96 md:h-[80%] mb-10 relative mx-auto cursor-pointer overflow-hidden rounded-lg group md:mx-5 md:w-80 xl:ml-48">
+                        <img class="w-full h-full object-cover" src="images/service-1.png" alt="">
+                        <div class="overlay absolute top-0 left-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 text-white w-full h-full flex items-center justify-center"><i class="ri-arrow-right-up-line text-5xl"></i></div>
+                    </div>
+                    <div class="p7-item shadow-2xl  w-96 md:h-[80%]  mb-10 relative mx-auto cursor-pointer overflow-hidden rounded-lg group md:mx-5 md:w-80 md:left-[55%] lg:left-[66%] xl:left-[58%]  ">
+                        <img class="w-full h-full object-cover" src="images/service-1.png" alt="">
+                        <div class="overlay absolute top-0 left-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 text-white w-full h-full flex items-center justify-center"><i class="ri-arrow-right-up-line text-5xl"></i></div>
+                    </div>
+                    <div class="p7-item shadow-2xl  w-96  mb-10 relative mx-auto cursor-pointer overflow-hidden rounded-lg group md:mx-5 md:w-80 xl:ml-48">
+                        <img class="w-full h-full object-cover" src="images/service-1.png" alt="">
+                        <div class="overlay absolute top-0 left-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 text-white w-full h-full flex items-center justify-center"><i class="ri-arrow-right-up-line text-5xl"></i></div>
+                    </div>
+                    <div class="p7-item shadow-2xl  w-96  mb-10 relative mx-auto cursor-pointer overflow-hidden rounded-lg group md:mx-5 md:w-80 md:left-[55%] lg:left-[66%] xl:left-[58%]">
+                        <img class="w-full h-full object-cover" src="images/service-1.png" alt="">
+                        <div class="overlay absolute top-0 left-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 text-white w-full h-full flex items-center justify-center"><i class="ri-arrow-right-up-line text-5xl"></i></div>
+                    </div>
+                    <div class="p7-item shadow-2xl  w-96  mb-10 relative mx-auto cursor-pointer overflow-hidden rounded-lg group md:mx-5 md:w-80 xl:ml-48">
+                        <img class="w-full h-full object-cover" src="images/service-1.png" alt="">
+                        <div class="overlay absolute top-0 left-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 text-white w-full h-full flex items-center justify-center"><i class="ri-arrow-right-up-line text-5xl"></i></div>
+                    </div>
+                </div>
+             </div>
+             <div class="page8 w-full h-fit px-6 pb-20 ">
+                <div class="p8-left pt-10 w-full md:mt-5 text-center">
+                    <h5 class="mb-5 text-blue-500 font-mona-sans">FAQs</h5>
+                    <h2 class="font-[mona-wide] text-4xl lg:text-6xl">We Know What You Think</h2>
+                </div>
+                <div class="p8-right w-full mt-10 font-mona-sans lg:mt-28">
+                    <div class="p8-process-box   mb-2 md:mb-4 text-gray-400 px-1 py-4 pb-2 border-b-[1px] border-gray-400 ">
+                       <div class="p8-inner rounded-lg px-2 py-3 transition-all duration-500">
+                        <div class="p8-process-box-top flex items-center justify-between">
+                            <div class="p8-process-box-left">
+                                <h2 class="capitalize font-[mona-wide] text-lg leading-5 sm:text-2xl lg:text-3xl sm:w-[70%]">Is there a maximum number of requests I can make?</h2>
+                            </div>
+                            <div class="p8-process-box-right">
+                                <div class="w-10 h-10 lg:w-10 lg:h-10 transition-transform duration-300  flex items-center justify-center rounded-full"><i class="ri-arrow-down-s-line text-[#9CA3AF] text-4xl inline-block updownIcon transform rotate-0  sm:text-4xl lg:text-3xl"></i></div>
+                            </div>
+                        </div>
+                        <div class="p8-process-box-btm hidden mt-3 ">
+                            <p class="text-xs sm:text-sm lg:text-lg ">We ask you to provide a brief description of the project you want. Include information about the type of project, the ultimate goal it is intended to achieve, and the context in which the project will operate.</p>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="p8-process-box   mb-2 md:mb-4 text-gray-400 px-1 py-4 pb-2 border-b-[1px] border-gray-400 ">
+                       <div class="p8-inner rounded-lg px-2 py-3 transition-all duration-500">
+                        <div class="p8-process-box-top flex items-center justify-between">
+                            <div class="p8-process-box-left">
+                                <h2 class="capitalize font-[mona-wide] text-lg leading-5 sm:text-2xl lg:text-3xl sm:w-[70%]">Is there a maximum number of requests I can make?</h2>
+                            </div>
+                            <div class="p8-process-box-right">
+                                <div class="w-10 h-10 lg:w-10 lg:h-10 transition-transform duration-300  flex items-center justify-center rounded-full"><i class="ri-arrow-down-s-line text-[#9CA3AF] text-4xl inline-block updownIcon transform rotate-0  sm:text-4xl lg:text-3xl"></i></div>
+                            </div>
+                        </div>
+                        <div class="p8-process-box-btm hidden mt-3 ">
+                            <p class="text-xs sm:text-sm lg:text-lg ">We ask you to provide a brief description of the project you want. Include information about the type of project, the ultimate goal it is intended to achieve, and the context in which the project will operate.</p>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="p8-process-box   mb-2 md:mb-4 text-gray-400 px-1 py-4 pb-2 border-b-[1px] border-gray-400 ">
+                       <div class="p8-inner rounded-lg px-2 py-3 transition-all duration-500">
+                        <div class="p8-process-box-top flex items-center justify-between">
+                            <div class="p8-process-box-left">
+                                <h2 class="capitalize font-[mona-wide] text-lg leading-5 sm:text-2xl lg:text-3xl sm:w-[70%]">Is there a maximum number of requests I can make?</h2>
+                            </div>
+                            <div class="p8-process-box-right">
+                                <div class="w-10 h-10 lg:w-10 lg:h-10 transition-transform duration-300  flex items-center justify-center rounded-full"><i class="ri-arrow-down-s-line text-[#9CA3AF] text-4xl inline-block updownIcon transform rotate-0  sm:text-4xl lg:text-3xl"></i></div>
+                            </div>
+                        </div>
+                        <div class="p8-process-box-btm hidden mt-3 ">
+                            <p class="text-xs sm:text-sm lg:text-lg ">We ask you to provide a brief description of the project you want. Include information about the type of project, the ultimate goal it is intended to achieve, and the context in which the project will operate.</p>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="p8-process-box   mb-2 md:mb-4 text-gray-400 px-1 py-4 pb-2 border-b-[1px] border-gray-400 ">
+                       <div class="p8-inner rounded-lg px-2 py-3 transition-all duration-500">
+                        <div class="p8-process-box-top flex items-center justify-between">
+                            <div class="p8-process-box-left">
+                                <h2 class="capitalize font-[mona-wide] text-lg leading-5 sm:text-2xl lg:text-3xl sm:w-[70%]">Is there a maximum number of requests I can make?</h2>
+                            </div>
+                            <div class="p8-process-box-right">
+                                <div class="w-10 h-10 lg:w-10 lg:h-10 transition-transform duration-300  flex items-center justify-center rounded-full"><i class="ri-arrow-down-s-line text-[#9CA3AF] text-4xl inline-block updownIcon transform rotate-0  sm:text-4xl lg:text-3xl"></i></div>
+                            </div>
+                        </div>
+                        <div class="p8-process-box-btm hidden mt-3 ">
+                            <p class="text-xs sm:text-sm lg:text-lg ">We ask you to provide a brief description of the project you want. Include information about the type of project, the ultimate goal it is intended to achieve, and the context in which the project will operate.</p>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="p8-process-box   mb-2 md:mb-4 text-gray-400 px-1 py-4 pb-2 border-b-[1px] border-gray-400 ">
+                       <div class="p8-inner rounded-lg px-2 py-3 transition-all duration-500">
+                        <div class="p8-process-box-top flex items-center justify-between">
+                            <div class="p8-process-box-left">
+                                <h2 class="capitalize font-[mona-wide] text-lg leading-5 sm:text-2xl lg:text-3xl sm:w-[70%]">Is there a maximum number of requests I can make?</h2>
+                            </div>
+                            <div class="p8-process-box-right">
+                                <div class="w-10 h-10 lg:w-10 lg:h-10 transition-transform duration-300  flex items-center justify-center rounded-full"><i class="ri-arrow-down-s-line text-[#9CA3AF] text-4xl inline-block updownIcon transform rotate-0  sm:text-4xl lg:text-3xl"></i></div>
+                            </div>
+                        </div>
+                        <div class="p8-process-box-btm hidden mt-3 ">
+                            <p class="text-xs sm:text-sm lg:text-lg ">We ask you to provide a brief description of the project you want. Include information about the type of project, the ultimate goal it is intended to achieve, and the context in which the project will operate.</p>
+                        </div>
+                       </div>
+                    </div>
+                    
+                    
+                   
+                    
+                   
+                    
+                </div>
+             </div>
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="script.js"></script>
+</body>
+</html>
